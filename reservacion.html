@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>Registro reservación</title>
+    </head>
+    <body class="bg-dark text-light">
+        <div class="row">
+            <div class="col-bg-12 bg-gradient">
+                <h1 class="text-center">Cada tatuaje cuenta una historia, ¿cuál es la tuya? ¡Registrate!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <a href="index.html" target="_self" class="btn btn-outline-secondary">Volver al inicio</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>POR FAVOR RELLENE LOS CAMPOS:</p>
+            </div>
+        </div>
+        <br>
+        
+        <div class="container">
+            <div class="row">
+                <div class="text-left">
+                <form action="completo.html" method="post">
+                    <label for="nom">Nombre:</label>
+                    <input type="text" name="nombre" id="nom" placeholder="Nombre" required="required">
+                    <br>
+                    <label for="ap">Apellidos:</label>
+                    <input type="text" name="apellidos" id="ap" placeholder="Apellidos" required="required">
+                    <br>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edadFicha" id="edad" min="18" max="90" required="required">
+                    <br>
+                    <label for="em">Correo electronico</label>
+                    <input type="email" id="em" name="correo" placeholder="correo@.com" required="required">
+                    <br>
+                    <label for="pas">Contraseña:</label>
+                    <input type="password" id="pas" name="contraseña" required="required">
+                    <br>
+                    <label>¿Podemos enviarle novedades a su correo?</label>
+                    <br>
+                    <input type="radio" name="publi" id="si">
+                    <label for="si">si</label>
+                    <br>
+                    <input type="radio" name="publi" id="no">
+                    <label for="si">no</label>
+                    <br>
+                    <label for="com">Comentarios:</label>
+                    <textarea name="Comentarios" id="com"></textarea>
+                    <br>
+                    <input type="submit" value="Enviar datos">
+                    <input type="reset"  value="Borrar datos">
+                </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
